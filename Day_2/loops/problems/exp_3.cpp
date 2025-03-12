@@ -10,10 +10,18 @@ int main(){
 
     int count  = 0;
 
-    while(n>0){
-        n /= 10;
-        count++;
+    if ( n == 0){
+        cout << "1" << endl;
+        
     }
-    cout << count << endl;
+    else{
+        
+        while(n>0){
+            n /= 10;
+            count++;
+        }
+        cout << count << endl;
+    }
+
     return 0;
 }
