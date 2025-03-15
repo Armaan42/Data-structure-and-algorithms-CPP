@@ -12,9 +12,11 @@ int main(){
     }
 
     int count = 0;
+    int n;
+    cin >> n;
 
     for(int i=0; i<size; i++){
-        if (arr[i] > 5){
+        if (arr[i] > n){
             count++;
         }
     }
