@@ -21,6 +21,7 @@ int main() {
             isDescending = false;
         }
     }
+    
 
     if (isAscending) {
         cout << "Array is sorted in ascending order" << endl;
