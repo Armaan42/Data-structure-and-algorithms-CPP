@@ -7,15 +7,17 @@ int main(){
     int n;
     cin >> n;
 
-    int reversed = 0;
+    int reverse = 0;
+    int lastDigit = 0;
 
-    while(n != 0){
-        int digit = n % 10;       
-        reversed = reversed * 10 + digit; 
-        n = n / 10;               
+    while ( n > 0 ){
+        reverse = reverse * 10;
+        lastDigit = n % 10;
+        reverse = reverse + lastDigit;
+        n = n / 10;
     }
 
-    cout << reversed << endl;
+    cout << reverse << endl;
 
     return 0;
 }
