@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-void sort123(vector<int> &v){
+void sort012(vector<int> &v){
     int noo = 0;
     int noz = 0;
     int notw = 0;
@@ -41,7 +41,7 @@ int main(){
     }
     cout << endl;
 
-    sort123(v);
+    sort012(v);
 
     for(int i=0; i<v.size(); i++){
         cout << v[i] << " ";
