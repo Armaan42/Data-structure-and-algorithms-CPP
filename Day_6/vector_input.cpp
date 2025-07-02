@@ -6,7 +6,7 @@ int main(){
     int size;
     cin >> size;
     
-    vector<int> v(size);
+    vector<int> v;
 
     for(int i=0; i<size; i++){
         int elem;
