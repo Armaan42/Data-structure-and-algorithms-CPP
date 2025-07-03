@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int binarySearch(vector<int> &arr, int target){
@@ -26,6 +27,7 @@ int binarySearch(vector<int> &arr, int target){
 int main() {
     vector<int> arr = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
     int target = 23;
+    // sort(arr.begin(), arr.end());
 
     int result = binarySearch(arr, target);
 
