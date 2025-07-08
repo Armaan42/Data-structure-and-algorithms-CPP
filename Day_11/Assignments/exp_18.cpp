@@ -5,21 +5,24 @@ using namespace std;
 
 int main(){
 
-    int arr[3][3];
+    int row, col;
+    cin >> row >> col;
 
-    for(int i=0; i<3; i++){
-        for(int j=0; j<3; j++){
+    int arr[row][col];
+
+    for(int i=0; i<row; i++){
+        for(int j=0; j<col; j++){
             cin >> arr[i][j];
         }
     }
     cout << endl;
 
-    for(int i=0; i<3; i++){
+    for(int i=0; i<row; i++){
         cout << arr[i][i] << " ";
     }cout << endl;
 
-    for(int i=0; i<3; i++){
-        cout << arr[i][2-i] << " ";
+    for(int i=0; i<row; i++){
+        cout << arr[i][row-i] << " ";
     }cout << endl;
 
     return 0;
