@@ -1,3 +1,5 @@
+// insert node at head
+
 #include<iostream>
 using namespace std;
 
