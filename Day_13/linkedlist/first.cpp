@@ -1,3 +1,5 @@
+// simple linkedlist concept
+
 #include<iostream>
 using namespace std;
 
