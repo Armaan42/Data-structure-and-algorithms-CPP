@@ -1,4 +1,4 @@
-// replace a characeter at a position
+// insert a characeter at a position
 
 #include<iostream>
 #include<string>
