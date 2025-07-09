@@ -1,3 +1,5 @@
+// insert node at tail
+
 #include<iostream>
 using namespace std;
 
