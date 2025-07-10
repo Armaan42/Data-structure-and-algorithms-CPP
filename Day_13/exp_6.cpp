@@ -1,4 +1,4 @@
-// a character at Multiple Positions
+// insert a character at Multiple Positions
 
 #include <iostream>
 #include <string>
