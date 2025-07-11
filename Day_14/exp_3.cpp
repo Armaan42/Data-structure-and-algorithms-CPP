@@ -20,11 +20,17 @@ int main(){
     cout <<s << endl;
     cout << endl;
 
-    string a = "abc";
+    string a = "abcdef";
     cout << a + "bas" << endl;
     cout << "xyz" + a << endl;
 
+    cout << endl;
+
     reverse(a.begin(), a.end());
+    cout << a << endl;
+
+    cout << endl;
+    reverse(a.begin()+2, a.end());
     cout << a << endl;
 
     return 0;
