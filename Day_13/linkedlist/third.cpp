@@ -28,7 +28,7 @@ void insertAtTail(Node* &tail, int data){
     tail = temp;
 }
 
-void printLinkedList(Node* &head){
+void printLinkedList(Node* head){
 	Node *temp = head;
 	
 	while(temp != NULL){
