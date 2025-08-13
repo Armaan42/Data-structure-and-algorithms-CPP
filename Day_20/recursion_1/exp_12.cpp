@@ -18,6 +18,18 @@ int mazePath(int sr, int sc, int er, int ec){
     return totalWays;
 }
 
+void printPath(int sr, int sc, int er, int ec, string s){
+    if(sr > er || sc > ec) return;
+    if(sr == er || sc == ec){
+        cout << s << endl;
+        return;
+    }
+
+    printPath(sr, sc+1, er, ec, s + 'R'); // right
+    printPath(sr+1, sc, er, ec, s + 'D'); // down
+}
+
 int main(){
     cout << mazePath(0,0,2,2) << endl;
+    printPath(0,0,2,2,"");
 }
