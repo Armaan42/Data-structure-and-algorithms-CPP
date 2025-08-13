@@ -30,6 +30,6 @@ void printPath(int sr, int sc, int er, int ec, string s){
 }
 
 int main(){
-    cout << mazePath(0,0,2,2) << endl;
-    printPath(0,0,2,2,"");
+    cout << mazePath(1,1,4,4) << endl;
+    printPath(1,1,4,4,"");
 }
