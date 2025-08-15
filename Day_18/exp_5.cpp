@@ -18,7 +18,7 @@ bool specificTarget(string str, char target){
 int main(){
     string str;
     getline(cin, str); 
-
+ 
     char target;
     cin >> target;
 
