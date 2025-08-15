@@ -8,24 +8,23 @@ Remove all the occurrences of 'a' from the string
 #include<string>
 using namespace std;
 
-void removeChar(string result, string original){
-    if(original.length() == 0){
-        cout << result;return;
+void removeChar(string result, string original, int idx){
+    if(idx == original.length()){
+        cout << result << endl;
+        return;
     }
 
-    char ch = original[0];
+    char ch = original[idx];
     if(ch == 'a'){
-        removeChar(result, original.substr(1));
+        removeChar(result, original, idx+1);
     }
     else{
-        removeChar(result+ch, original.substr(1));
+        removeChar(result+ch, original, idx+1);
     }
 }
 
 int main(){
     string str = "abacdddca";
-    string s;
-
-    removeChar("", str);
+    removeChar("", str, 0);
 
 }
