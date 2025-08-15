@@ -1,5 +1,5 @@
 /*
-find the max value in the array
+find the max value in an array
 */
 
 #include<iostream>
