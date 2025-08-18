@@ -5,15 +5,29 @@ Calculate greatest common divisor of two numbers
 #include<iostream>
 using namespace std;
 
-int greatestCommonDivisor(int a, int b){
-    for(int i = min(a, b); i>=2; i--){
-        if(a%i==0 && b%i == 0){
-            return i;
-        }
+// int greatestCommonDivisor(int a, int b){
+//     for(int i = min(a, b); i>=2; i--){
+//         if(a%i==0 && b%i == 0){
+//             return i;
+//         }
+//     }
+//     return 1;
+// }
+
+int gcd(int a, int b){
+    if(a == 0){
+        return b;
     }
-    return 1;
+    else{
+        return gcd(b%a, a);
+    }
 }
 
 int main(){
-    cout << greatestCommonDivisor(24, 60);
+    // cout << greatestCommonDivisor(24, 60);
+
+    int a = 27;
+    int b = 45;
+
+    cout << gcd(a, b);
 }
