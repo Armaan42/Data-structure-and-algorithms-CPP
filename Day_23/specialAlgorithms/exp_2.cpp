@@ -10,6 +10,8 @@ Product of array except self
                 24 / 2 = 12
 
     // WITHOUT DIVISION 
+    ans[i] = (product of all elements before i) * (product of all elements after i)
+
 */
 
 #include<iostream>
