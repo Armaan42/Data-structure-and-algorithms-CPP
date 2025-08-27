@@ -20,14 +20,19 @@ int main(){
     int k = 3;
 
     int maxSum = INT_MIN;
+    int maxId = -1;
 
     for(int i=0; i<n-k; i++){
         int sum = 0;
         for(int j=i; j<i+k; j++){
             sum += arr[j];
         }
-        maxSum = max(maxSum, sum);
+        if(maxSum < sum){
+            maxSum = sum;
+            maxId = i;
+        }
     }
 
     cout << maxSum << endl;
+    cout << maxId << endl;
 }
